@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_inset">#0000</color>
+    <bool name="fitsSystemWindows">true</bool>
+    <dimen name="navigation_drawer_header_margin">16dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+
+    <declare-styleable name="AutoScrollViewPager">
+        <attr name="point_layout" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CompassView">
+        <attr name="showKaaba" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordView">
+        <attr name="strikeThrough" format="boolean"/>
+        <attr name="eyeTint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="Speedometer">
+        <attr name="maxSpeed" format="float"></attr>
+        <attr name="currentSpeed" format="float"></attr>
+        <attr name="onColor" format="color"></attr>
+        <attr name="offColor" format="color"></attr>
+        <attr name="scaleColor" format="color"></attr>
+        <attr name="scaleTextSize" format="dimension"></attr>
+        <attr name="readingTextSize" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+</resources>

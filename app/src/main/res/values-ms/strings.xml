@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_version_is_available">New Version is Available</string>
+    <string name="please_update_your_app_on_google_store">Please update your app on Google Play store</string>
+    <string name="action_update">Update</string>
+    <string name="action_update_later">Later</string>
+
+    <string name="title">Tajuk</string>
+    <string name="menu_btn_edit">Edit</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="location">Location</string>
+    <string name="select_auto">Automatic</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="search">Search</string>
+
+    <!--Language support-->
+    <string-array name="languages">
+        <item>English</item>
+        <item>Indonesia</item>
+        <!--<item>Arabic</item>-->
+        <!--<item>Malaysia</item>-->
+    </string-array>
+
+    <!--Button Name-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--Edittext Name Hint-->
+    <string name="hint_username">Email/No. Hp</string>
+    <string name="hint_password">Password</string>
+
+    <string name="more_title">Lebih</string>
+    <string name="quran_title">Qur\'an</string>
+    <string name="aqiqah_title">Aqiqah</string>
+    <string name="qurban_title">Qurban</string>
+    <string name="adzan_title">Adzan</string>
+    <string name="kiblat_title">Kiblat</string>
+    <string name="masjid_title">Masjid</string>
+    <string name="doa_title">Doa</string>
+    <string name="hadist_title">Hadis</string>
+    <string name="live_mecca_title">Live Mekah</string>
+    <string name="gps_tracking_title">GPS Tracking Haji Umroh</string>
+    <string name="wedding_title">Perkahwinan</string>
+    <string name="khitan_title">Sunat</string>
+    <string name="tasbih_title">Tasbih</string>
+    <string name="bookstore_title">Bookstore</string>
+    <string name="donasi_title">Derma</string>
+    <string name="syahadat_title">Shahada</string>
+    <string name="islamicproduct_title">Produk Islam</string>
+
+    <string name="time_remaining_hour">%1$d hour(s) %2$d minute(s) remaining</string>
+    <string name="time_remaining_minute">%d minute(s) remaining</string>
+
+    <string name="notif_adzan_24_hour">%1$s - Pukul %2$tk:%2$tM</string>
+    <string name="notification_body">Time for %1$s prayers at %2$s.</string>
+
+    <!-- Prayer time names -->
+    <string name="imsak">Imsak</string>
+    <string name="fajr">Shubuh</string>
+    <string name="dhuhr">Dzuhur</string>
+    <string name="asr">Ashar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isya</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="adzan_nabawi">Adzan Nabawi</string>
+</resources>

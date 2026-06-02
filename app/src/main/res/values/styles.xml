@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/grey_400</item>
+        <item name="colorControlActivated">@color/grey_500</item>
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+
+    <style name="ThemeFullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/grey_300</item>
+        <item name="colorControlActivated">@color/grey_400</item>
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+
+    <style name="Toolbar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/grey_400</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="MyEditText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+        <item name="android:paddingRight">@dimen/_10sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="Button.Green.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_green_rounded</item>
+    </style>
+
+    <style name="Button.Red.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_red_rounded</item>
+    </style>
+
+    <style name="Button.Blue.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_blue_rounded</item>
+    </style>
+
+    <style name="Button.Bluesky.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_bluesky_rounded</item>
+    </style>
+
+    <style name="Button.Transparent_white_border.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_transparent_white_border_rounded</item>
+    </style>
+
+    <style name="Button.Transparent_grey_border.Rounded" parent="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_30sdp</item>
+        <item name="android:paddingRight">@dimen/_30sdp</item>
+        <item name="android:background">@drawable/btn_transparent_grey_border_rounded</item>
+    </style>
+
+    <style name="Button.Notification.Rounded" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:paddingLeft">@dimen/_5sdp</item>
+        <item name="android:paddingRight">@dimen/_5sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/btn_notif_rounded</item>
+    </style>
+
+    <!--BottomSheetFragment-->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_dialog_fragment</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+</resources>

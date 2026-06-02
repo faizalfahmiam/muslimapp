@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/walk"
+        android:icon="@drawable/ic_bottom_home"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/bike"
+        android:icon="@drawable/ic_bottom_notifications"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/bus"
+        android:icon="@drawable/ic_bottom_help"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/car"
+        android:icon="@drawable/ic_bottom_personal"
+        tools:ignore="MenuTitle" />
+
+</menu>

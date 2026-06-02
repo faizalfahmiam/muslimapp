@@ -1,0 +1,178 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.dmg.muslimapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 200
+        versionName "1.5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+       /* vectorDrawables {
+            useSupportLibrary = true
+
+        }*/
+
+        resConfigs "en", "in", "ar", "ms"
+       /* lintOptions {
+
+            checkReleaseBuilds false
+            abortOnError false
+        }*/
+    }
+
+    flavorDimensions "tier"
+    productFlavors {
+        dev {
+            buildConfigField("String", "BASE_URL", "\"https://backend.muslimapp.id/api\"")
+            buildConfigField("String", "BASE_URL_NEW", "\"https://pro.muslimapp.id/restapi/\"")
+            buildConfigField("String", "BASE_URL_DASHBOARD", "\"https://dev.muslimapp.id/dashboard/\"")
+            buildConfigField("String", "BASE_URL_FCM", "\"http://159.65.14.198:5000/\"")
+            buildConfigField("String", "BASE_URL_BURSA_SAJADAH", "\"http://159.65.14.198:6000/\"")
+            resValue "string", "app_name", "MuslimApp Dev"
+            resValue "string", "fcm_subscribe", "bc_muslimapp_dev"
+        }
+        production {
+            buildConfigField("String", "BASE_URL", "\"https://backend.muslimapp.id/api\"")
+            buildConfigField("String", "BASE_URL_NEW", "\"https://pro.muslimapp.id/restapi/\"")
+            buildConfigField("String", "BASE_URL_DASHBOARD", "\"https://pro.muslimapp.id/dashboard/\"")
+            buildConfigField("String", "BASE_URL_FCM", "\"http://159.65.14.198:5000/\"")
+            buildConfigField("String", "BASE_URL_BURSA_SAJADAH", "\"http://159.65.14.198:6000/\"")
+            resValue "string", "app_name", "MuslimApp"
+            resValue "string", "fcm_subscribe", "bc_muslimapp"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        /*debug {
+            multiDexEnabled true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            splits {
+                abi {
+                    enable true
+                    reset()
+                    include 'armeabi-v7a', 'mips', 'x86'
+                    universalApk true
+                }
+            }
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexEnabled false
+            minifyEnabled true
+            shrinkResources true
+        }*/
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+configurations.all {
+    exclude group: 'com.android.support', module: 'support-v13'
+    resolutionStrategy.force "com.android.support:support-annotations:$supportLibraryVersion"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Android support libraries
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+
+    // Dependency injection
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Multidex
+    implementation "com.android.support:multidex:$rootProject.multidexVersion"
+
+    // Code generator for view
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    kapt "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
+    // parser
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    // Material dialog
+    implementation "com.afollestad.material-dialogs:core:$rootProject.materialDialogVersion"
+
+    // Font
+    implementation "uk.co.chrisjenx:calligraphy:$rootProject.calligraphyVersion"
+
+    // SlidingPanel
+    implementation "com.sothree.slidinguppanel:library:$rootProject.slidingPanelVersion"
+
+    // Locale utils
+    implementation "com.github.franmontiel:LocaleChanger:$rootProject.localeVersion"
+
+    //Slider
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    kapt 'com.github.bumptech.glide:compiler:4.4.0'
+
+    // Networking
+    implementation "com.amitshekhar.android:android-networking:$rootProject.networkVersion"
+
+    //Switch Button
+    implementation "com.github.zcweng:switch-button:$rootProject.switchButtonVersion"
+
+    // Google play service
+    implementation "com.google.android.gms:play-services-maps:$rootProject.playServiceVersion"
+    implementation "com.google.android.gms:play-services-places:$rootProject.playServiceVersion"
+    implementation "com.google.android.gms:play-services-location:$rootProject.playServiceVersion"
+    implementation "com.google.android.gms:play-services-analytics:$rootProject.playServiceVersion"
+    implementation "com.google.android.gms:play-services-gcm:$rootProject.playServiceVersion"
+
+    // Permission utils
+    implementation "rebus:permission-utils:$rootProject.permissionVersion"
+
+    // Smart location
+    implementation("io.nlopez.smartlocation:library:$rootProject.smartLocationVersion") {
+        transitive = false
+    }
+
+    //Google Directions
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.1'
+
+    // Crashlytics
+
+    // Multiple Dimens
+    implementation "com.intuit.sdp:sdp-android:$rootProject.sdpAndroidVersion"
+
+    // Hijri calendar
+    implementation "com.github.msarhan:ummalqura-calendar:$rootProject.hijriCalendarVersion"
+}
+
+apply plugin: 'com.google.gms.google-services'
+//repositories {
+//    mavenCentral()
+//}
+
+apply plugin: 'kotlin-android-extensions'

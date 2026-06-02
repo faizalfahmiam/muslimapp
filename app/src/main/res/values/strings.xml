@@ -1,0 +1,86 @@
+<resources>
+    <string name="new_version_is_available">New Version is Available</string>
+    <string name="please_update_your_app_on_google_store">Please update your app on Google Play store</string>
+    <string name="action_update">Update</string>
+    <string name="action_update_later">Later</string>
+
+    <string name="title">Title</string>
+    <string name="menu_btn_edit">Edit</string>
+
+    <!--Play service-->
+    <string name="map_api_key" translatable="false">AIzaSyCHf67XN9FBsowhaBe7E6BihmoDwj7YjnY</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="location">Location</string>
+    <string name="select_auto">Automatic</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="search">Search</string>
+
+    <!--Language support-->
+    <string-array name="languages">
+        <item>English</item>
+        <item>Indonesia</item>
+        <!--<item>Arabic</item>-->
+        <!--<item>Malaysia</item>-->
+    </string-array>
+
+    <!--Button Name-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--Edittext Name Hint-->
+    <string name="hint_username">Email/No. Hp</string>
+    <string name="hint_password">Password</string>
+
+    <string name="more_title">More</string>
+    <string name="quran_title">Qur\'an</string>
+    <string name="aqiqah_title">Aqiqah</string>
+    <string name="qurban_title">Qurban</string>
+    <string name="adzan_title">Adzan</string>
+    <string name="kiblat_title">Qibla</string>
+    <string name="masjid_title">Mosque</string>
+    <string name="doa_title">Pray</string>
+    <string name="hadist_title">Hadith</string>
+    <string name="live_mecca_title">Live Mecca</string>
+    <string name="gps_tracking_title">GPS Tracking Hajj Umrah</string>
+    <string name="wedding_title">Wedding</string>
+    <string name="khitan_title">Circumcision</string>
+    <string name="tasbih_title">Prayer Beads</string>
+    <string name="bookstore_title">Bookstore</string>
+    <string name="donasi_title">Donation</string>
+    <string name="syahadat_title">Shahada</string>
+    <string name="islamicproduct_title">Islamic Product</string>
+
+    <!--Date-->
+    <string name="patern_hh_mm" translatable="false">HH:mm</string>
+    <string name="patern_eeee" translatable="false">EEEE</string>
+    <string name="patern_dd_mm_yyyy" translatable="false">dd-MM-yyyy</string>
+    <string name="patern_dd_mmm_yyyy" translatable="false">dd MMM yyyy</string>
+    <string name="patern_dd_mmmm_yyyy" translatable="false">dd MMMM yyyy</string>
+    <string name="patern_yyyy_dd_mm" translatable="false">yyyy-dd-MM</string>
+    <string name="patern_yyyy_mm_dd" translatable="false">yyyy-MM-dd</string>
+    <string name="patern_yyyy_dd_mm_hh_mm" translatable="false">yyyy-dd-MM HH:mm</string>
+    <string name="patern_yyyy_mm_dd_hh_mm" translatable="false">yyyy-MM-dd HH:mm</string>
+    <string name="patern_yyyy_dd_mm_hh_mm_ss" translatable="false">yyyy-dd-MM HH:mm:ss</string>
+    <string name="patern_yyyy_mm_dd_hh_mm_ss" translatable="false">yyyy-MM-dd HH:mm:ss</string>
+    <string name="patern_eeee_dd_MMMM_yyyy" translatable="false">EEEE, dd MMMM yyyy</string>
+    <string name="patern_eeee_dd_MMM_yyyy_hh_mm" translatable="false">EEEE, dd MMM yyyy, HH:mm</string>
+
+    <string name="time_remaining_hour">%1$d hour(s) %2$d minute(s) remaining</string>
+    <string name="time_remaining_minute">%d minute(s) remaining</string>
+
+    <string name="notif_adzan_24_hour">%1$s at %2$tk:%2$tM</string>
+    <string name="notification_body">Time for %1$s prayers at %2$s.</string>
+
+    <!-- Prayer time names -->
+    <string name="imsak">Imsak</string>
+    <string name="fajr">Shubuh</string>
+    <string name="dhuhr">Dzuhur</string>
+    <string name="asr">Ashar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isya</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="adzan_nabawi">Adzan Nabawi</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_green_rounded_verse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ayah_arab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:lineSpacingExtra="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="ARAB"
+            android:textDirection="anyRtl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:maxLines="3"/>
+
+        <TextView
+            android:id="@+id/tv_ayah_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:text="Translate"
+            android:textSize="@dimen/_11sdp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:maxLines="3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

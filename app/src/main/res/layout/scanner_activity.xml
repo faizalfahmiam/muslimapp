@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.dmg.muslimapp.ui.scanner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR CODE SCANNER AND GENERATOR"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR"
+        android:id="@+id/btn_generate"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR"
+        android:id="@+id/btn_scan"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Perfect RG"
+        android:id="@+id/textView2"
+        android:layout_margin="40dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="prfectrg.blogspot.com"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

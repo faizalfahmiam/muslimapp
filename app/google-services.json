@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "504772492611",
+    "firebase_url": "https://muslimapp-rst.firebaseio.com",
+    "project_id": "muslimapp-rst",
+    "storage_bucket": "muslimapp-rst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504772492611:android:0e61327d2b2b52c0",
+        "android_client_info": {
+          "package_name": "com.dmg.muslimapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504772492611-2lu5bt8e70su4kjl8nba1ocdff3ksfnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIVf9JiPULwdHAWMr3erdXFdWCO2PogRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504772492611:android:bc8303031b694469",
+        "android_client_info": {
+          "package_name": "com.dmgtest.id"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504772492611-2lu5bt8e70su4kjl8nba1ocdff3ksfnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIVf9JiPULwdHAWMr3erdXFdWCO2PogRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

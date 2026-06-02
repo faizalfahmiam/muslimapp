@@ -1,0 +1,70 @@
+package com.dmg.muslimapp.ui.quran
+
+import android.content.Context
+import android.graphics.Typeface
+import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
+
+import com.dmg.muslimapp.R
+import com.dmg.muslimapp.data.db.model.quran.Ayah
+import com.dmg.muslimapp.ui.base.BaseViewHolder
+
+import butterknife.BindView
+import butterknife.ButterKnife
+
+class QuranAyahAdapter(private val mContext: Context, val ayahList: List<Ayah>, internal var mItemClickListener: OnItemClickListener) : RecyclerView.Adapter<BaseViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.quran_item_ayat, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
+        holder.onBind(position)
+    }
+
+    inner class ViewHolder(itemView: View) : BaseViewHolder(itemView) {
+
+        val tf = Typeface.createFromAsset(mContext.assets, "fonts/quran/LPMQ.ttf")
+
+        @BindView(R.id.tv_ayah_number)
+        lateinit var mTvAyahNumber: TextView
+
+        @BindView(R.id.tv_ayah_arab)
+        lateinit var mTvAyahArab: TextView
+
+        @BindView(R.id.tv_ayah_translation)
+        lateinit var mTvAyahTranslation: TextView
+
+        private var ayah: Ayah? = null
+
+        init {
+            ButterKnife.bind(this, itemView)
+        }
+
+        override fun onBind(position: Int) {
+            super.onBind(position)
+
+            ayah = ayahList[position]
+
+            mTvAyahNumber.text = ayah!!.VerseID.toString()
+            mTvAyahArab.typeface = tf
+            mTvAyahArab.text = ayah!!.AyahText
+            mTvAyahTranslation.text = ayah!!.Translation
+
+        }
+
+        override fun clear() {
+
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return ayahList.size
+    }
+
+    interface OnItemClickListener{
+        fun onDetail()
+    }
+}
